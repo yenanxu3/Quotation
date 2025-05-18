@@ -92,7 +92,7 @@ public class QuoteEngine {
     public String toString() {
         String output = "";
         for (int counter = 0; counter < quoteCount; counter++) {
-            output += counter + ". " + quotes.get(counter) + "\n";
+            output += counter + ". " + quotes.get(counter).getQuote() + "|" + quotes.get(counter).getAuthor() + "\n";
         }
         return output;
     }
